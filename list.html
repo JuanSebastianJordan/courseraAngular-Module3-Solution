@@ -1,0 +1,9 @@
+<div class="row">
+    <ol>
+        <li ng-repeat="item in contr.foundItems">
+          {{ item.name }},{{ item.short_name }},{{item.description}}
+         <button ng-click="contr.onRemove({index: $index});">Don't want this one!</button>
+        </li>
+    </ol>
+</div>
+<!--<div class="alert alert-danger" role="alert" ng-if="contr.foundItems.length===0">{{contr.onEmpty}}</div>-->
